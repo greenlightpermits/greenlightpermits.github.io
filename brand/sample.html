@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+#c{width:1440px;height:1080px;background:#f6f8f6;font-family:Inter,Arial,sans-serif;color:#13201a;display:grid;grid-template-columns:860px 1fr;gap:28px;padding:36px;box-sizing:border-box;position:relative}
+.top{position:absolute;left:36px;right:36px;top:24px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:12px;font-family:Archivo,Inter,Arial,sans-serif;font-weight:800;font-size:26px}
+.tl{display:inline-flex;flex-direction:column;gap:4px;background:#13201a;padding:6px 7px;border-radius:9px}.tl i{width:10px;height:10px;border-radius:50%;background:#3a4a42}.tl i:last-child{background:#12a150;box-shadow:0 0 8px #12a150}
+.tag{background:#f2b01e;color:#13201a;font-weight:800;font-family:Archivo,Inter,Arial,sans-serif;padding:8px 16px;border-radius:999px;font-size:18px;letter-spacing:1px}
+.sheet{margin-top:62px;background:#fff;border:1px solid #d9e2dc;border-radius:14px;padding:18px;position:relative}
+.sheet h3,.tbl h3{font-family:Archivo,Inter,Arial,sans-serif;margin:0 0 6px;font-size:20px}
+.sub{color:#5b6b63;font-size:14px;margin-bottom:10px}
+.tbl{margin-top:62px;background:#fff;border:1px solid #d9e2dc;border-radius:14px;padding:22px}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th{text-align:left;background:#13201a;color:#fff;padding:9px 10px;font-weight:600;font-size:14px}
+td{padding:9px 10px;border-bottom:1px solid #e8eeea}
+td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:8px}
+.legend{display:flex;gap:18px;font-size:14px;margin-top:10px;flex-wrap:wrap}
+.foot{margin-top:16px;font-size:13px;color:#5b6b63}
+.stamp{position:absolute;right:24px;bottom:22px;border:3px solid #12a150;color:#0b7a3b;font-family:Archivo,Inter,Arial,sans-serif;font-weight:800;padding:6px 14px;border-radius:8px;transform:rotate(-6deg);font-size:18px;background:rgba(255,255,255,.85)}
+</style></head><body>
+<div id="c">
+<div class="top"><div class="brand"><span class="tl"><i></i><i></i><i></i></span>Greenlight Permits &amp; Takeoffs</div><div class="tag">SAMPLE TAKEOFF</div></div>
+<div class="sheet">
+<h3>A-101 · Floor Plan — Kitchen &amp; Bath Remodel</h3><div class="sub">Single-family residence · Sample project · Scale 1/4" = 1'-0"</div>
+<svg width="820" height="760" viewBox="0 0 820 760">
+<defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#eef2ef" stroke-width="1"/></pattern>
+<pattern id="tile" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="rgba(242,176,30,.18)"/><path d="M0 0H16V16" fill="none" stroke="rgba(242,176,30,.6)" stroke-width="1"/></pattern></defs>
+<rect width="820" height="760" fill="url(#grid)"/>
+<!-- tile areas -->
+<rect x="60" y="60" width="380" height="300" fill="url(#tile)"/>
+<rect x="470" y="60" width="290" height="220" fill="url(#tile)"/>
+<!-- exterior walls -->
+<g stroke="#13201a" stroke-width="10" fill="none">
+<path d="M60 60H760V700H60Z"/></g>
+<!-- interior walls highlighted (drywall) -->
+<g stroke="#12a150" stroke-width="8" stroke-linecap="square" opacity=".9">
+<path d="M440 60V360"/><path d="M60 360H300"/><path d="M380 360H760"/><path d="M470 280H760"/><path d="M470 60V280"/><path d="M300 360V700"/><path d="M560 360V700"/></g>
+<!-- exterior wall drywall overlay -->
+<path d="M68 68H752V692H68Z" fill="none" stroke="#12a150" stroke-width="3" stroke-dasharray="10 6"/>
+<!-- doors -->
+<g stroke="#5b6b63" stroke-width="2" fill="none"><path d="M300 360 A80 80 0 0 1 380 440"/><path d="M380 360V440"/><path d="M470 280 A60 60 0 0 0 530 340"/></g>
+<!-- windows -->
+<g stroke="#2d7ff9" stroke-width="10"><path d="M150 60H300"/><path d="M560 60H680"/><path d="M60 480V600"/><path d="M760 450V560"/></g>
+<!-- casework -->
+<g fill="rgba(45,127,249,.12)" stroke="#2d7ff9" stroke-width="2"><rect x="70" y="70" width="360" height="50"/><rect x="70" y="120" width="50" height="230"/><rect x="200" y="200" width="160" height="70" rx="6"/></g>
+<!-- labels -->
+<g font-family="Archivo, Inter, Arial, sans-serif" font-weight="700" font-size="20" fill="#13201a">
+<text x="230" y="320">KITCHEN</text><text x="560" y="180">BATH</text><text x="120" y="540">LIVING</text><text x="400" y="540">DINING</text><text x="610" y="540">BEDROOM</text></g>
+<g font-size="14" fill="#5b6b63" font-family="Inter"><text x="230" y="340">228 SF · Tile floor</text><text x="560" y="200">64 SF · Tile floor + walls</text></g>
+<!-- count markers -->
+<g font-family="Inter" font-size="12" font-weight="700" fill="#fff">
+<circle cx="225" cy="90" r="13" fill="#d9480f"/><text x="221" y="94">1</text>
+<circle cx="620" cy="90" r="13" fill="#d9480f"/><text x="616" y="94">2</text>
+<circle cx="90" cy="540" r="13" fill="#d9480f"/><text x="86" y="544">3</text>
+<circle cx="730" cy="505" r="13" fill="#d9480f"/><text x="726" y="509">4</text></g>
+<!-- dims -->
+<g stroke="#5b6b63" stroke-width="1.5"><path d="M60 735H760"/><path d="M60 728V742M760 728V742"/><path d="M790 60V700"/><path d="M783 60H797M783 700H797"/></g>
+<g font-size="15" fill="#13201a" font-family="Inter" font-weight="600"><text x="385" y="728">35'-0"</text><text x="796" y="390" transform="rotate(90 796 390)">32'-0"</text></g>
+</svg>
+<div class="legend"><span><span class="sw" style="background:#12a150"></span>Drywall (walls)</span><span><span class="sw" style="background:rgba(242,176,30,.6)"></span>Tile areas</span><span><span class="sw" style="background:#2d7ff9"></span>Windows &amp; cabinets</span><span><span class="sw" style="background:#d9480f;border-radius:50%"></span>Window count</span></div>
+</div>
+<div class="tbl">
+<h3>Quantity Takeoff Summary</h3><div class="sub">Excel deliverable · Quantities only — you add your pricing</div>
+<table>
+<tr><th>Item</th><th style="text-align:right">Qty</th><th>Unit</th></tr>
+<tr><td>1/2" drywall — walls</td><td class="n">2,964</td><td>SF</td></tr>
+<tr><td>5/8" drywall — ceilings</td><td class="n">1,120</td><td>SF</td></tr>
+<tr><td>Moisture-resistant board (bath)</td><td class="n">312</td><td>SF</td></tr>
+<tr><td>Drywall sheets (4×12)</td><td class="n">92</td><td>EA</td></tr>
+<tr><td>Interior partition — framing</td><td class="n">146</td><td>LF</td></tr>
+<tr><td>Floor tile (kitchen + bath)</td><td class="n">292</td><td>SF</td></tr>
+<tr><td>Wall tile (bath)</td><td class="n">168</td><td>SF</td></tr>
+<tr><td>Base cabinets</td><td class="n">24</td><td>LF</td></tr>
+<tr><td>Windows</td><td class="n">4</td><td>EA</td></tr>
+<tr><td>Interior doors</td><td class="n">2</td><td>EA</td></tr>
+<tr><td>Paint — walls &amp; ceilings</td><td class="n">4,084</td><td>SF</td></tr>
+</table>
+<div class="foot">Includes 10% waste on sheet goods and tile. Delivered in 48 hours as Excel + marked-up PDF.<br>Sample for illustration only — not a client project.</div>
+</div>
+<div class="stamp">48-HR TAKEOFF</div>
+</div></body></html>

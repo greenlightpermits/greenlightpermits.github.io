@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greenlight Permits & Takeoffs | Permit Expediting & Construction Takeoffs, Miami-Dade, Broward & Palm Beach</title>
+<meta name="description" content="Permit expediting and construction takeoffs for South Florida contractors. Miami-Dade, Broward and Palm Beach. Takeoffs back in 48 hours. Hablamos español.">
+<meta property="og:title" content="Greenlight Permits & Takeoffs">
+<meta property="og:description" content="Permits pulled and takeoffs done for South Florida contractors. Fast, flat-fee, bilingual.">
+<link rel="canonical" href="https://greenlightpermits.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Greenlight Permits & Takeoffs",
+"description":"Permit expediting and construction quantity takeoffs for contractors in Miami-Dade, Broward and Palm Beach counties.",
+"address":{"@type":"PostalAddress","addressLocality":"Boca Raton","addressRegion":"FL","addressCountry":"US"},
+"areaServed":["Miami-Dade County, FL","Broward County, FL","Palm Beach County, FL"],"knowsLanguage":["en","es"]}
+</script>
+<style>
+:root{
+  --green:#12a150; --green-d:#0b7a3b; --ink:#13201a; --muted:#5b6b63; --line:#e3e9e5;
+  --bg:#f6f8f6; --card:#fff; --amber:#f2b01e; --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:16px}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Archivo,Inter,system-ui,sans-serif;font-weight:800;font-size:18px;text-decoration:none}
+.light{display:inline-flex;flex-direction:column;gap:3px;background:var(--ink);padding:5px 6px;border-radius:8px}
+.light i{width:8px;height:8px;border-radius:50%;background:#3a4a42}
+.light i:last-child{background:var(--green);box-shadow:0 0 8px var(--green)}
+.nav-r{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:none;padding:6px 12px;font:600 13px Inter;cursor:pointer;color:var(--muted)}
+.lang button.on{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:13px 20px;font:600 15px Inter;cursor:pointer;text-decoration:none;transition:.15s}
+.btn-g{background:var(--green);color:#fff}.btn-g:hover{background:var(--green-d)}
+.btn-o{background:#fff;border:1.5px solid var(--ink);color:var(--ink)}.btn-o:hover{background:var(--ink);color:#fff}
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(18,161,80,.35),transparent 70%)}
+.hero .wrap{position:relative;z-index:1}
+.pill{display:inline-block;background:rgba(18,161,80,.18);color:#7fe3a8;border:1px solid rgba(127,227,168,.35);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);max-width:820px;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:#5fd98f}
+.hero p.lead{font-size:19px;color:#c9d6cf;max-width:640px;margin-bottom:28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-o{background:transparent;color:#fff;border-color:#fff}
+.hero .btn-o:hover{background:#fff;color:var(--ink)}
+.trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:36px;color:#a9bab1;font-size:14px}
+.trust b{color:#fff;font-weight:600}
+/* sections */
+section{padding:72px 0}
+.eyebrow{color:var(--green-d);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:14px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:36px;font-size:17px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card .from{color:var(--green-d);font-weight:700;margin-bottom:14px}
+.card ul{list-style:none;display:grid;gap:8px;margin-bottom:22px}
+.card li{padding-left:26px;position:relative}
+.card li:before{content:"";position:absolute;left:0;top:6px;width:14px;height:14px;border-radius:50%;background:var(--green);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 100 16A8 8 0 008 0zm3.7 6.2l-4.2 4.6a.8.8 0 01-1.2 0L4.3 8.6a.8.8 0 111.2-1.1l1.4 1.6 3.6-3.9a.8.8 0 011.2 1z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 100 16A8 8 0 008 0zm3.7 6.2l-4.2 4.6a.8.8 0 01-1.2 0L4.3 8.6a.8.8 0 111.2-1.1l1.4 1.6 3.6-3.9a.8.8 0 011.2 1z'/%3E%3C/svg%3E") center/contain no-repeat}
+.icon{width:46px;height:46px;border-radius:12px;background:#e6f6ec;display:grid;place-items:center;margin-bottom:16px}
+.step{counter-increment:s}
+.step .n{font-family:Archivo,Inter,system-ui,sans-serif;font-weight:800;font-size:15px;color:#fff;background:var(--ink);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;margin-bottom:14px}
+.step h3{font-size:19px;margin-bottom:6px}.step p{color:var(--muted)}
+/* quote */
+.quote-bg{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.qbox{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:start}
+@media(max-width:900px){.qbox{grid-template-columns:1fr}}
+.tabs{display:flex;gap:8px;margin-bottom:20px}
+.tabs button{flex:1;border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:12px;font:600 15px Inter;cursor:pointer}
+.tabs button.on{border-color:var(--green);background:#e9f7ef;color:var(--green-d)}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px}
+select,input,textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:12px;font:15px Inter;background:#fff;color:var(--ink)}
+select:focus,input:focus,textarea:focus{outline:none;border-color:var(--green)}
+.chk{display:flex;align-items:center;gap:10px;font-weight:500;margin-top:14px}
+.chk input{width:18px;height:18px}
+.result{background:var(--ink);color:#fff;border-radius:var(--radius);padding:28px;position:sticky;top:84px}
+.result .lbl{color:#a9bab1;font-size:14px}
+.result .price{font-family:Archivo,Inter,system-ui,sans-serif;font-weight:800;font-size:46px;margin:6px 0 4px;color:#5fd98f}
+.result .note{color:#a9bab1;font-size:13px;margin:10px 0 20px}
+.result .turn{font-weight:600}
+/* form */
+.form-card{max-width:760px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+@media(max-width:640px){.row2{grid-template-columns:1fr}}
+.drop{border:2px dashed #b9cfc2;border-radius:var(--radius);padding:26px;text-align:center;background:#f9fcfa;cursor:pointer;margin-top:6px}
+.drop.hover{border-color:var(--green);background:#eef9f2}
+.drop small{color:var(--muted)}
+#files-list{font-size:14px;color:var(--muted);margin-top:8px}
+.ok{display:none;background:#e9f7ef;border:1px solid #a9dfbf;border-radius:var(--radius);padding:24px;margin-top:20px}
+.err{display:none;background:#fff4e0;border:1px solid #f2cf86;border-radius:var(--radius);padding:18px;margin-top:20px}
+/* areas & faq */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";float:right;font-size:20px;color:var(--green-d);line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+footer{background:var(--ink);color:#a9bab1;padding:44px 0;font-size:14px}
+footer a{color:#cfe9d9}
+footer .wrap{display:grid;gap:12px}
+footer b{color:#fff}
+.disclaimer{font-size:12.5px;color:#7f9188;max-width:820px}
+.modal{display:none;position:fixed;inset:0;z-index:50;background:rgba(10,20,15,.55);padding:20px;overflow:auto}
+.modal.open{display:grid;place-items:center}
+.modal-card{background:#fff;border-radius:var(--radius);padding:28px;width:100%;max-width:560px;position:relative}
+.modal-card h3{font-size:24px;margin-bottom:4px}
+.modal-x{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;cursor:pointer;color:var(--muted)}
+.sticky-call{display:none}
+@media(max-width:640px){
+  .sticky-call{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid var(--line);padding:10px;gap:8px}
+  .sticky-call a,.sticky-call button{flex:1}
+  body{padding-bottom:70px}
+}
+[data-es]{}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="light"><i></i><i></i><i></i></span>Greenlight</a>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language">
+        <button id="b-en" class="on" onclick="setLang('en')">EN</button>
+        <button id="b-es" onclick="setLang('es')">ES</button>
+      </div>
+      <a class="btn btn-g" href="#start" style="padding:10px 16px" data-t="navCta">Get a quote</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="pill" data-t="pill">Miami-Dade · Broward · Palm Beach · Hablamos español</span>
+    <h1 data-t="h1" data-html>Your permits pulled. Your takeoffs done. <em>You stay on the job.</em></h1>
+    <p class="lead" data-t="lead">Permit expediting and quantity takeoffs for South Florida contractors. Flat fees, quotes in minutes, and takeoffs back in 48 hours.</p>
+    <div class="cta-row">
+      <a class="btn btn-g" href="#start" data-t="cta1">Upload your plans</a>
+      <a class="btn btn-o" href="#quote" data-t="cta2">See your price</a>
+    </div>
+    <div class="trust">
+      <span data-t="t1" data-html><b>20+ years</b> in estimating & building departments</span>
+      <span data-t="t2" data-html><b>48-hour</b> takeoff turnaround</span>
+      <span data-t="t3" data-html><b>Flat-fee</b> pricing, no surprises</span>
+      <span data-t="t4" data-html><b>English & Spanish</b></span>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow" data-t="svcEye">Services</div>
+    <h2 data-t="svcH">Two things that slow every contractor down. We handle both.</h2>
+    <p class="sub" data-t="svcSub">Hand off the paperwork and the counting. Spend your time building and closing jobs.</p>
+    <div class="grid2">
+      <div class="card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b7a3b" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+        <h3 data-t="p1h">Permit Expediting</h3>
+        <div class="from" data-t="p1f">From $150 per permit + county fees</div>
+        <ul>
+          <li data-t="p1a">Application prep & online submittal (Miami-Dade, Broward & Palm Beach portals)</li>
+          <li data-t="p1b">Plan review comment tracking and resubmittals</li>
+          <li data-t="p1c">Inspection scheduling and status updates</li>
+          <li data-t="p1d">Roofing, windows & doors, remodels, additions, commercial build-outs</li>
+        </ul>
+        <a class="btn btn-o" href="#start" onclick="pick('permit')" data-t="p1cta">Start a permit</a>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b7a3b" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3 data-t="p2h">Construction Takeoffs</h3>
+        <div class="from" data-t="p2f">From $250 per takeoff · back in 48 hours</div>
+        <ul>
+          <li data-t="p2a">Drywall, framing, tile, paint, roofing, concrete, flooring</li>
+          <li data-t="p2b">Full-project takeoffs for GCs and remodelers</li>
+          <li data-t="p2c">Delivered as Excel + marked-up PDF, ready to price</li>
+          <li data-t="p2d">Rush 24-hour service available</li>
+          <li data-t="p2e">Volume pricing: 15% off at 5+ takeoffs a month</li>
+        </ul>
+        <a class="btn btn-o" href="#start" onclick="pick('takeoff')" data-t="p2cta">Order a takeoff</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow" data-t="howEye">How it works</div>
+    <h2 data-t="howH">Three steps. No phone tag.</h2>
+    <div class="grid3" style="margin-top:28px">
+      <div class="step card"><div class="n">1</div><h3 data-t="s1h">Upload your plans</h3><p data-t="s1p">Send drawings and the job address. Takes two minutes from your phone.</p></div>
+      <div class="step card"><div class="n">2</div><h3 data-t="s2h">Get a flat price</h3><p data-t="s2p">We confirm your quote the same business day. Pay online and we start.</p></div>
+      <div class="step card"><div class="n">3</div><h3 data-t="s3h">We deliver</h3><p data-t="s3p">Takeoff in your inbox in 48 hours, or your permit submitted and tracked to approval.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-bg" id="quote">
+  <div class="wrap">
+    <div class="eyebrow" data-t="qEye">Instant price</div>
+    <h2 data-t="qH">See your price in 10 seconds</h2>
+    <p class="sub" data-t="qSub">Estimated range. Your final flat fee is confirmed after we see the plans.</p>
+    <div class="qbox">
+      <div class="card">
+        <div class="tabs">
+          <button id="tab-permit" class="on" onclick="setSvc('permit')" data-t="tabP">Permit</button>
+          <button id="tab-takeoff" onclick="setSvc('takeoff')" data-t="tabT">Takeoff</button>
+        </div>
+        <div id="q-permit">
+          <label data-t="qPtype">Permit type</label>
+          <select id="pType" onchange="calc()"></select>
+          <label data-t="qCounty">County</label>
+          <select id="pCounty" onchange="calc()">
+            <option value="miami">Miami-Dade</option>
+            <option value="broward">Broward</option>
+            <option value="palm">Palm Beach</option>
+          </select>
+          <label class="chk"><input type="checkbox" id="pComments" onchange="calc()"><span data-t="qPcom">Already have plan review comments to answer</span></label>
+          <label class="chk"><input type="checkbox" id="pInsp" onchange="calc()"><span data-t="qPinsp">Add inspection scheduling & tracking to final</span></label>
+        </div>
+        <div id="q-takeoff" style="display:none">
+          <label data-t="qTtrade">Trade</label>
+          <select id="tTrade" onchange="calc()"></select>
+          <label data-t="qTsize">Project type</label>
+          <select id="tSize" onchange="calc()"></select>
+          <label class="chk"><input type="checkbox" id="tRush" onchange="calc()"><span data-t="qTrush">Rush: back in 24 hours</span></label>
+        </div>
+      </div>
+      <div class="result">
+        <div class="lbl" data-t="rLbl">Estimated flat fee</div>
+        <div class="price" id="price">$—</div>
+        <div class="turn" id="turn"></div>
+        <div class="note" id="note"></div>
+        <a class="btn btn-g" href="#start" style="width:100%" data-t="rCta">Lock in this price</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="eyebrow" data-t="fEye">Get started</div>
+    <h2 data-t="fH">Upload your plans and get a confirmed quote today</h2>
+    <p class="sub" data-t="fSub">Requests received by 3 PM on business days get a confirmed quote the same day.</p>
+    <div class="card form-card">
+      <form name="intake" id="intake" data-kind="request">
+        <p style="display:none"><label>Leave empty <input name="bot-field"></label></p>
+        <input type="hidden" name="estimate" id="f-estimate">
+        <input type="hidden" name="language" id="f-lang" value="en">
+        <label data-t="fSvc">What do you need?</label>
+        <select name="service" id="f-service" required>
+          <option value="permit" data-t="optP">Permit expediting</option>
+          <option value="takeoff" data-t="optT">Construction takeoff</option>
+          <option value="both" data-t="optB">Both</option>
+        </select>
+        <div class="row2">
+          <div><label data-t="fName">Your name</label><input name="name" required autocomplete="name"></div>
+          <div><label data-t="fCo">Company</label><input name="company" autocomplete="organization"></div>
+          <div><label data-t="fPhone">Mobile phone</label><input name="phone" type="tel" required autocomplete="tel"></div>
+          <div><label data-t="fEmail">Email</label><input name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <label data-t="fAddr">Job address (city is fine for takeoffs)</label>
+        <input name="job_address">
+        <div class="row2">
+          <div><label data-t="fLic">Contractor license # (for permits)</label><input name="license"></div>
+          <div><label data-t="fDue">When do you need it?</label>
+            <select name="due">
+              <option data-t="d1">This week</option><option data-t="d2">Next 2 weeks</option><option data-t="d3">Just pricing for now</option>
+            </select></div>
+        </div>
+        <label data-t="fPlans">Plans (PDF, photos)</label>
+        <label class="drop" id="drop" for="f-files" style="margin-top:6px;font-weight:500">
+          <span data-t="fDrop">Tap to choose files or drag them here</span><br><small data-t="fDropS">Up to 20 MB total. Bigger sets: we'll send you an upload link.</small>
+        </label>
+        <input type="file" id="f-files" name="plans" multiple accept=".pdf,image/*,.dwg" style="display:none">
+        <div id="files-list"></div>
+        <label data-t="fNotes">Anything else? (scope, trades, deadline)</label>
+        <textarea name="notes" rows="3"></textarea>
+        <label class="chk" style="font-weight:400;font-size:14px"><input type="checkbox" name="sms_ok" value="yes"><span data-t="fSms">OK to text me about this request.</span></label>
+        <button class="btn btn-g" type="submit" style="width:100%;margin-top:20px" id="f-submit" data-t="fBtn">Send my request</button>
+      </form>
+      <div class="ok" id="ok"><h3 data-t="okH">Got it. We're on it.</h3><p data-t="okP">You'll get a confirmed flat-fee quote by phone or email today (next business morning if after 3 PM).</p></div>
+      <div class="err" id="err"><b data-t="errH">We couldn't send that from here.</b> <span data-t="errP">Please try again in a minute, or use the Contact us button at the bottom of the page.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap grid2">
+    <div>
+      <div class="eyebrow" data-t="aEye">Service area</div>
+      <h2 data-t="aH">Miami-Dade, Broward & Palm Beach</h2>
+      <p class="sub" data-t="aSub">Permits in the county and city building departments below. Takeoffs anywhere in Florida.</p>
+      <div class="chips">
+        <span>Boca Raton</span><span>Delray Beach</span><span>Boynton Beach</span><span>West Palm Beach</span><span>Jupiter</span><span>Wellington</span><span>Lake Worth Beach</span><span>Fort Lauderdale</span><span>Pompano Beach</span><span>Deerfield Beach</span><span>Coral Springs</span><span>Hollywood</span><span>Pembroke Pines</span><span>Plantation</span><span>Davie</span><span>Miami</span><span>Miami Beach</span><span>Hialeah</span><span>Doral</span><span>Coral Gables</span><span>Homestead</span><span>Miami Gardens</span><span>Aventura</span><span>Kendall / Unincorporated Miami-Dade</span><span>Unincorporated Broward & PBC</span>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">FAQ</div>
+      <h2 data-t="faqH">Questions</h2>
+      <details><summary data-t="q1">Do you pull the permit under your license?</summary><p data-t="a1">No. The permit stays under your contractor license or the owner-builder. We prepare and submit it as your authorized agent, track every comment, and keep you updated.</p></details>
+      <details><summary data-t="q2">Are county permit fees included?</summary><p data-t="a2">No. Our fee covers our work. Government permit and plan review fees are paid to the county or city and passed through at cost.</p></details>
+      <details><summary data-t="q3">What do I get with a takeoff?</summary><p data-t="a3">An Excel quantity sheet organized by item and area, plus a marked-up PDF so you can see exactly what was counted. You add your own pricing.</p></details>
+      <details><summary data-t="q4">How do I pay?</summary><p data-t="a4">After you approve the confirmed quote, we send a payment link. Takeoffs are paid upfront; permits are 50% to start and 50% at submittal.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding:56px 0;background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap" style="text-align:center">
+    <h2 data-t="cH">Questions before you send plans?</h2>
+    <p class="sub" style="margin:0 auto 24px" data-t="cSub">Send us a message and we'll get back to you the same business day.</p>
+    <button class="btn btn-g" onclick="openContact()" data-t="cBtn">Contact us</button>
+  </div>
+</section>
+
+<div id="cModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cTitle" onclick="if(event.target===this)closeContact()">
+  <div class="modal-card">
+    <button class="modal-x" onclick="closeContact()" aria-label="Close">×</button>
+    <h3 id="cTitle" data-t="cTitle">Contact us</h3>
+    <form id="contactForm" data-kind="contact">
+      <p style="display:none"><label>Leave empty <input name="bot-field"></label></p>
+      <input type="hidden" name="language" class="f-lang" value="en">
+      <label data-t="fName">Your name</label><input name="name" required autocomplete="name">
+      <div class="row2">
+        <div><label data-t="fPhone">Mobile phone</label><input name="phone" type="tel" autocomplete="tel"></div>
+        <div><label data-t="fEmail">Email</label><input name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <label data-t="cMsg">How can we help?</label><textarea name="notes" rows="4" required></textarea>
+      <button class="btn btn-g" type="submit" style="width:100%;margin-top:18px" data-t="cSend">Send message</button>
+    </form>
+    <div class="ok" data-ok><h3 data-t="cOkH">Message sent.</h3><p data-t="cOkP">We'll get back to you the same business day.</p></div>
+    <div class="err" data-err><b data-t="errH">We couldn't send that from here.</b> <span data-t="cErrP">Please try again in a minute.</span></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><b>Greenlight Permits & Takeoffs</b> · <span data-t="fArea">Serving Miami-Dade, Broward & Palm Beach</span></div>
+    <div class="disclaimer" data-t="disc">Greenlight provides permit application preparation, submittal and tracking as the authorized agent of licensed contractors and owner-builders, and quantity takeoff services. We are not a law firm, do not provide legal advice, and do not prepare or review contracts, lien documents or releases.</div>
+    <div style="font-size:13px"><span data-t="fLinks">Local services:</span> <a href="permit-expediting-miami-dade/">Permit expediting Miami-Dade</a> · <a href="permit-expediting-broward/">Permit expediting Broward</a> · <a href="permit-expediting-palm-beach/">Permit expediting Palm Beach</a> · <a href="construction-takeoffs-miami-dade/">Takeoffs Miami-Dade</a> · <a href="construction-takeoffs-broward/">Takeoffs Broward</a> · <a href="construction-takeoffs-palm-beach/">Takeoffs Palm Beach</a></div>
+    <div>© <span id="yr"></span> Greenlight Permits & Takeoffs</div>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <button class="btn btn-o" onclick="openContact()" data-t="cBtn">Contact us</button>
+  <a class="btn btn-g" href="#start" data-t="cta1">Upload your plans</a>
+</div>
+
+<script>
+/* ============ PRICES: edit these numbers to set your fees ============
+   Researched Nov 11 2026. Sources:
+   - PermitFlow (Miami): a-la-carte $150-300 per submission; hourly $50-200; full service $1,500-5,000+
+   - Permit Place cost guide: residential remodel $500-1,500; new residential $1,500-5,000;
+     commercial single-site $1,500-5,000; residential timeline 1-3 wks, commercial 4-8 wks
+   - Fiverr FL roofing permit runner: $250 roofing package, 3-day delivery
+   - Nedes Estimating: flat takeoff fees small residential $250-600, single-family $500-1,200,
+     small commercial $1,000-3,500+; rush +25-50%; 15-20% off for 5+ takeoffs/month
+   Positioning: low-to-middle of US firms (new local business), well above offshore.
+*/
+const PERMITS = [
+  {id:'trade',  en:'Trade permit (elec, plumb, mech)',es:'Permiso de oficio (eléc., plom., mec.)',lo:150, hi:250,  days:{en:'same day–1 week',es:'mismo día–1 semana'}},
+  {id:'roof',   en:'Roofing (re-roof)',              es:'Techo (re-techado)',            lo:250, hi:350,  days:{en:'1–3 weeks',es:'1–3 semanas'}},
+  {id:'win',    en:'Windows & doors / shutters',     es:'Ventanas y puertas / shutters', lo:250, hi:350,  days:{en:'1–3 weeks',es:'1–3 semanas'}},
+  {id:'remod',  en:'Interior remodel (kitchen/bath)',es:'Remodelación interior',          lo:500, hi:900,  days:{en:'1–3 weeks',es:'1–3 semanas'}},
+  {id:'add',    en:'Addition / new home',            es:'Ampliación / casa nueva',        lo:1500,hi:3000, days:{en:'4–8 weeks',es:'4–8 semanas'}},
+  {id:'comm',   en:'Commercial build-out',           es:'Remodelación comercial',         lo:1500,hi:3500, days:{en:'4–8 weeks',es:'4–8 semanas'}},
+];
+const PERMIT_COMMENTS = 150;   // add-on: answering plan review comments (market: $150-300 per submission)
+const PERMIT_INSPECT  = 150;   // add-on: inspection scheduling to final (market: $150-300 per visit)
+const TRADES = [
+  {id:'dw',   en:'Drywall & framing', es:'Drywall y framing', full:false},
+  {id:'tile', en:'Tile / flooring',   es:'Losa / pisos',      full:false},
+  {id:'paint',en:'Paint',             es:'Pintura',           full:false},
+  {id:'roof', en:'Roofing',           es:'Techo',             full:false},
+  {id:'conc', en:'Concrete / masonry',es:'Concreto / bloque', full:false},
+  {id:'full', en:'Full project (all trades)', es:'Proyecto completo (todos los oficios)', full:true},
+];
+// lo/hi = one trade; flo/fhi = full project (all trades)
+const SIZES = [
+  {id:'s', en:'Small residential (remodel / addition)', es:'Residencial pequeño (remodelación / ampliación)', lo:250, hi:350,  flo:400,  fhi:600},
+  {id:'m', en:'Single-family home',                     es:'Casa unifamiliar',                               lo:350, hi:600,  flo:750,  fhi:1200},
+  {id:'l', en:'Small commercial (office / retail)',     es:'Comercial pequeño (oficina / local)',            lo:600, hi:1200, flo:1500, fhi:3500},
+  {id:'x', en:'Large commercial / multifamily',         es:'Comercial grande / multifamiliar',               lo:0,   hi:0,    flo:0,    fhi:0},
+];
+const RUSH = 1.5;              // market: +25-50% for 24-48 hr rush
+/* ===================================================================== */
+
+const T = {
+ es:{navCta:'Cotizar',pill:'Miami-Dade · Broward · Palm Beach · We speak English',
+  h1:'Sus permisos tramitados. Sus takeoffs listos. <em>Usted sigue en la obra.</em>',
+  lead:'Trámite de permisos y takeoffs de cantidades para contratistas del sur de Florida. Precios fijos, cotización en minutos y takeoffs en 48 horas.',
+  cta1:'Subir planos',cta2:'Ver su precio',
+  t1:'<b>20+ años</b> en estimados y departamentos de construcción',t2:'Takeoffs en <b>48 horas</b>',t3:'<b>Precio fijo</b>, sin sorpresas',t4:'<b>Inglés y español</b>',
+  svcEye:'Servicios',svcH:'Dos cosas que frenan a todo contratista. Nosotros nos encargamos de ambas.',svcSub:'Delegue el papeleo y los conteos. Dedique su tiempo a construir y cerrar trabajos.',
+  p1h:'Trámite de Permisos',p1f:'Desde $150 por permiso + tasas del condado',p1a:'Preparación y envío en línea (portales de Miami-Dade, Broward y Palm Beach)',p1b:'Seguimiento de comentarios de revisión y reenvíos',p1c:'Programación de inspecciones y reportes de estado',p1d:'Techos, ventanas y puertas, remodelaciones, ampliaciones, locales comerciales',p1cta:'Iniciar un permiso',
+  p2h:'Takeoffs de Construcción',p2f:'Desde $250 por takeoff · listo en 48 horas',p2a:'Drywall, framing, losa, pintura, techo, concreto, pisos',p2b:'Takeoffs de proyecto completo para GCs y remodeladores',p2c:'Entregado en Excel + PDF marcado, listo para cotizar',p2d:'Servicio urgente en 24 horas disponible',p2e:'Precio por volumen: 15% de descuento desde 5 takeoffs al mes',p2cta:'Pedir un takeoff',
+  howEye:'Cómo funciona',howH:'Tres pasos. Sin perseguir llamadas.',s1h:'Suba sus planos',s1p:'Envíe los planos y la dirección de la obra. Dos minutos desde su teléfono.',s2h:'Reciba un precio fijo',s2p:'Confirmamos su cotización el mismo día hábil. Paga en línea y empezamos.',s3h:'Entregamos',s3p:'El takeoff en su correo en 48 horas, o su permiso enviado y seguido hasta la aprobación.',
+  qEye:'Precio al instante',qH:'Vea su precio en 10 segundos',qSub:'Rango estimado. Su precio fijo final se confirma al ver los planos.',tabP:'Permiso',tabT:'Takeoff',qPtype:'Tipo de permiso',qCounty:'Condado',qPcom:'Ya tengo comentarios de revisión que responder',qPinsp:'Agregar programación de inspecciones hasta el final',qTtrade:'Oficio',qTsize:'Tipo de proyecto',qTrush:'Urgente: listo en 24 horas',
+  rLbl:'Precio fijo estimado',rCta:'Asegurar este precio',
+  fEye:'Empiece aquí',fH:'Suba sus planos y reciba una cotización confirmada hoy',fSub:'Solicitudes recibidas antes de las 3 PM en días hábiles reciben cotización el mismo día.',
+  fSvc:'¿Qué necesita?',optP:'Trámite de permiso',optT:'Takeoff de construcción',optB:'Ambos',fName:'Su nombre',fCo:'Compañía',fPhone:'Celular',fEmail:'Correo electrónico',fAddr:'Dirección de la obra (para takeoffs basta la ciudad)',fLic:'Licencia de contratista # (para permisos)',fDue:'¿Para cuándo lo necesita?',d1:'Esta semana',d2:'Próximas 2 semanas',d3:'Solo cotizando por ahora',fPlans:'Planos (PDF, fotos)',fDrop:'Toque para elegir archivos o arrástrelos aquí',fDropS:'Hasta 20 MB en total. Para juegos grandes le enviamos un enlace.',fNotes:'¿Algo más? (alcance, oficios, fecha límite)',fSms:'Pueden enviarme mensajes de texto sobre esta solicitud.',fBtn:'Enviar mi solicitud',
+  okH:'Recibido. Ya estamos en eso.',okP:'Recibirá una cotización de precio fijo confirmada por teléfono o correo hoy (la mañana siguiente si es después de las 3 PM).',errH:'No pudimos enviarlo desde aquí.',errP:'Intente de nuevo en un minuto, o use el botón Contáctenos al final de la página.',
+  aEye:'Área de servicio',aH:'Miami-Dade, Broward y Palm Beach',aSub:'Permisos en los departamentos de construcción del condado y las ciudades. Takeoffs en todo Florida.',faqH:'Preguntas',
+  q1:'¿Sacan el permiso con su licencia?',a1:'No. El permiso queda bajo su licencia de contratista o el dueño-constructor. Nosotros lo preparamos y enviamos como su agente autorizado, seguimos cada comentario y lo mantenemos informado.',
+  q2:'¿Incluye las tasas del condado?',a2:'No. Nuestra tarifa cubre nuestro trabajo. Las tasas de permiso y revisión se pagan al condado o la ciudad al costo.',
+  q3:'¿Qué recibo con un takeoff?',a3:'Una hoja de cantidades en Excel organizada por partida y área, más un PDF marcado para ver exactamente qué se contó. Usted agrega sus precios.',
+  q4:'¿Cómo pago?',a4:'Al aprobar la cotización confirmada le enviamos un enlace de pago. Los takeoffs se pagan por adelantado; los permisos 50% al inicio y 50% al enviarlo.',
+  disc:'Greenlight prepara, envía y da seguimiento a solicitudes de permisos como agente autorizado de contratistas licenciados y dueños-constructores, y ofrece servicios de takeoff de cantidades. No somos un bufete de abogados, no damos asesoría legal y no preparamos ni revisamos contratos, documentos de gravamen ni liberaciones.',
+  cH:'¿Preguntas antes de enviar planos?',cSub:'Envíenos un mensaje y le respondemos el mismo día hábil.',cBtn:'Contáctenos',cTitle:'Contáctenos',cMsg:'¿En qué le podemos ayudar?',cSend:'Enviar mensaje',cOkH:'Mensaje enviado.',cOkP:'Le respondemos el mismo día hábil.',cErrP:'Intente de nuevo en un minuto.',fArea:'Servimos Miami-Dade, Broward y Palm Beach',fLinks:'Servicios locales:'}
+};
+const EN = {};
+let lang='en', svc='permit';
+document.querySelectorAll('[data-t]').forEach(el=>{EN[el.dataset.t]=el.hasAttribute('data-html')?el.innerHTML:el.textContent});
+
+function fill(sel, arr){const v=sel.value;sel.innerHTML=arr.map(o=>`<option value="${o.id}">${o[lang]}</option>`).join('');if(v)sel.value=v}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;
+  document.getElementById('b-en').classList.toggle('on',l==='en');
+  document.getElementById('b-es').classList.toggle('on',l==='es');
+  document.getElementById('f-lang').value=l;document.querySelectorAll('.f-lang').forEach(x=>x.value=l);
+  document.querySelectorAll('[data-t]').forEach(el=>{
+    const k=el.dataset.t, s=(l==='es'&&T.es[k])?T.es[k]:EN[k];
+    if(s==null)return;
+    if(el.hasAttribute('data-html'))el.innerHTML=s; else el.textContent=s;
+  });
+  fill(pType,PERMITS);fill(tTrade,TRADES);fill(tSize,SIZES);calc();
+  try{localStorage.setItem('gl-lang',l)}catch(e){}
+}
+function setSvc(s){
+  svc=s;
+  document.getElementById('tab-permit').classList.toggle('on',s==='permit');
+  document.getElementById('tab-takeoff').classList.toggle('on',s==='takeoff');
+  document.getElementById('q-permit').style.display=s==='permit'?'':'none';
+  document.getElementById('q-takeoff').style.display=s==='takeoff'?'':'none';
+  calc();
+}
+function pick(s){setSvc(s);document.getElementById('f-service').value=s}
+const money=n=>'$'+(Math.round(n/5)*5).toLocaleString('en-US');
+function calc(){
+  const P=document.getElementById('price'),TU=document.getElementById('turn'),N=document.getElementById('note');
+  let txt,turn,note;
+  if(svc==='permit'){
+    const p=PERMITS.find(x=>x.id===pType.value)||PERMITS[0];
+    let add=(pComments.checked?PERMIT_COMMENTS:0)+(pInsp.checked?PERMIT_INSPECT:0);
+    txt=money(p.lo+add)+' – '+money(p.hi+add);
+    turn=lang==='es'?`Enviado en 2–3 días hábiles · aprobación típica ${p.days.es}`:`Submitted in 2–3 business days · typical approval ${p.days.en}`;
+    note=lang==='es'?'Más tasas de permiso del condado/ciudad, al costo. Los tiempos de aprobación dependen de la jurisdicción.':'Plus county/city permit fees at cost. Approval times depend on the building department.';
+  }else{
+    const t=TRADES.find(x=>x.id===tTrade.value)||TRADES[0], z=SIZES.find(x=>x.id===tSize.value)||SIZES[0];
+    if(!z.lo){txt=lang==='es'?'A medida':'Custom quote';}
+    else{const r=tRush.checked?RUSH:1,lo=t.full?z.flo:z.lo,hi=t.full?z.fhi:z.hi;txt=money(lo*r)+' – '+money(hi*r);}
+    turn=tRush.checked?(lang==='es'?'Entrega en 24 horas':'Delivered in 24 hours'):(lang==='es'?'Entrega en 48 horas':'Delivered in 48 hours');
+    note=lang==='es'?'Excel + PDF marcado. Precio fijo confirmado al revisar los planos. 15% de descuento desde 5 takeoffs al mes.':'Excel + marked-up PDF. Flat fee confirmed after we review the plans. 15% off at 5+ takeoffs a month.';
+  }
+  P.textContent=txt;TU.textContent=turn;N.textContent=note;
+  document.getElementById('f-estimate').value=svc+': '+txt;
+}
+const pType=document.getElementById('pType'),tTrade=document.getElementById('tTrade'),tSize=document.getElementById('tSize');
+const pComments=document.getElementById('pComments'),pInsp=document.getElementById('pInsp'),tRush=document.getElementById('tRush');
+
+/* files */
+const fileIn=document.getElementById('f-files'),drop=document.getElementById('drop'),fl=document.getElementById('files-list');
+function showFiles(){const f=[...fileIn.files];const mb=f.reduce((a,b)=>a+b.size,0)/1048576;
+  fl.textContent=f.length?f.map(x=>x.name).join(', ')+` (${mb.toFixed(1)} MB)`+(mb>20?(lang==='es'?' — muy grande, le enviaremos un enlace':' — too large, we\'ll send you a link'):''):''}
+fileIn.addEventListener('change',showFiles);
+['dragover','dragenter'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.add('hover')}));
+['dragleave','drop'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.remove('hover')}));
+drop.addEventListener('drop',ev=>{try{fileIn.files=ev.dataTransfer.files;showFiles()}catch(e){}});
+
+/* ===== Form backend: Google Apps Script web app (saves to your private Google Sheet + Drive, emails you) =====
+   Paste your Apps Script /exec URL below after deploying (see SETUP.md). */
+const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwd5Rcj8Hkycvp0eWcHCmxfaaIHHB0yI_0Vj-FnP-2rRiXI8itPdi9WdxUOk7eFD1P1-g/exec';
+const MAX_MB = 20;
+const toB64 = f => new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result.split(',')[1]);r.onerror=rej;r.readAsDataURL(f)});
+async function sendForm(form, files){
+  const data={kind:form.dataset.kind,page:location.href,submitted:new Date().toISOString()};
+  new FormData(form).forEach((v,k)=>{if(!(v instanceof File))data[k]=v});
+  if(data['bot-field'])return true;            // spam bot: pretend success
+  delete data['bot-field'];
+  data.files=[];
+  for(const f of (files||[])) data.files.push({name:f.name,type:f.type||'application/octet-stream',data:await toB64(f)});
+  // text/plain keeps this a "simple" request, so the browser doesn't block it
+  const r=await fetch(FORM_ENDPOINT,{method:'POST',body:JSON.stringify(data)});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok||!j.ok)throw new Error(j.error||r.status);
+  return true;
+}
+function wire(form, okEl, errEl, getFiles){
+  form.addEventListener('submit',async ev=>{
+    ev.preventDefault();
+    const btn=form.querySelector('[type=submit]'),label=btn.textContent;
+    let files=getFiles?getFiles():[];
+    const mb=files.reduce((a,b)=>a+b.size,0)/1048576;
+    if(mb>MAX_MB){files=[];form.querySelector('[name=notes]').value+=`\n[Files too large (${mb.toFixed(1)} MB) - please send an upload link]`}
+    btn.disabled=true;btn.textContent=lang==='es'?'Enviando…':'Sending…';errEl.style.display='none';
+    try{await sendForm(form,files);form.style.display='none';okEl.style.display='block';
+      try{window.gtag&&gtag('event','generate_lead',{form:form.dataset.kind})}catch(e){}}
+    catch(e){errEl.style.display='block';btn.disabled=false;btn.textContent=label}
+  });
+}
+wire(document.getElementById('intake'),document.getElementById('ok'),document.getElementById('err'),()=>[...fileIn.files]);
+const cf=document.getElementById('contactForm'),cm=document.getElementById('cModal');
+wire(cf,cm.querySelector('[data-ok]'),cm.querySelector('[data-err]'));
+function openContact(){cm.classList.add('open');setTimeout(()=>cf.querySelector('input[name=name]').focus(),50)}
+function closeContact(){cm.classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeContact()});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+let saved=null;try{saved=localStorage.getItem('gl-lang')}catch(e){}
+setLang(saved||((navigator.language||'').startsWith('es')?'es':'en'));
+</script>
+</body>
+</html>
